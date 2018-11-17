@@ -14,4 +14,7 @@
 <locale name="ru_RU" full_name="Русский">
 	<message key="plugins.generic.pdfJsViewer.name">Модуль «PDF-просмотрщик PDF.JS»</message>
 	<message key="plugins.generic.pdfJsViewer.description"><![CDATA[Использует <a href="http://mozilla.github.io/pdf.js">PDF-просмотрщик pdf.js</a> для встраивания PDF-файлов на страницы просмотра гранок статьи и выпуска.]]></message>
+	<message key="plugins.generic.pdfJsViewer.settings.description"><![CDATA[Настройки модуля PdfJsViewer]]></message>
+	<message key="plugins.generic.pdfJsViewer.settings.downloadOffset"><![CDATA[Число дней с момента публикации выпуска, по прошествии которого он станет доступным для скачивания.]]></message>
+	<message key="plugins.generic.pdfJsViewer.settings.downloadOffsetIsRequired">Пожалуйста введите число дней, через которое станет доступно скачивание документов.</message>
 </locale>
