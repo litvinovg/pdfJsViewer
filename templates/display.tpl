@@ -56,6 +56,18 @@
 		        {display: none;}
 		}
 	</style>
+	<!-- Disable Copy and Paste-->
+	<script>
+		window.onload = function() {
+			$("#pdfCanvasIframe").contents().find("#outerContainer").css("user-select", "none");
+			$("#pdfCanvasIframe").contents().find("#outerContainer").css("-ms-user-select", "none");
+			$("#pdfCanvasIframe").contents().find("#outerContainer").css("-o-user-select", "none");
+			$("#pdfCanvasIframe").contents().find("#outerContainer").css("-moz-user-select", "none");
+			$("#pdfCanvasIframe").contents().find("#outerContainer").css("-khtml-user-select", "none");
+			$("#pdfCanvasIframe").contents().find("#outerContainer").css("-webkit-user-select", "none");
+			$("#pdfCanvasIframe").contents().find("#outerContainer").css("-webkit-touch-callout", "none");
+	    }
+	</script>
 	{/literal}
 </head>
 <body class="pkp_page_{$requestedPage|escape} pkp_op_{$requestedOp|escape}">
