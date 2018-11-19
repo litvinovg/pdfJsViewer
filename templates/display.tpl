@@ -56,7 +56,10 @@
 		        {display: none;}
 		}
 	</style>
+	{/literal}
 	<!-- Disable Copy and Paste-->
+	{if ! $allowDownload}
+	{literal}
 	<script>
 		window.onload = function() {
 			$("#pdfCanvasIframe").contents().find("#outerContainer").css("user-select", "none");
@@ -69,6 +72,7 @@
 	    }
 	</script>
 	{/literal}
+	{/if}
 </head>
 <body class="pkp_page_{$requestedPage|escape} pkp_op_{$requestedOp|escape}">
 
